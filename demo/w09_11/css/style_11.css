@@ -578,3 +578,9 @@ Resume
     height: 100%;
 }
 
+.about2 {
+    font-size: 1.8rem;
+    color: blue;
+    padding: 1.2rem 0;
+    text-transform: uppercase;
+}
