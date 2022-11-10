@@ -16,6 +16,12 @@ function change(index) {
         case 4:
             p.innerHTML = `<iframe src="./demo/w06_11/blog_11.html" width="100%" height="100%" />`
             break;
+        case 5:
+            p.innerHTML = `<iframe src="./demo/w08_11/quiz1_11.html" width="100%" height="100%" />`
+            break;
+        case 6:
+            p.innerHTML = `<iframe src="./demo/w10_11/resume_11.html" width="100%" height="100%" />`
+            break;
     }
 
 }
