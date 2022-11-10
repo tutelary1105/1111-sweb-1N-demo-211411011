@@ -6,7 +6,9 @@
 
 ### W10-P1: show w09-resume locally
 
-![](w10-p1.png)
+![](w10-p1-1.png)
+
+![](w10-p1-2.png)
 
 ### W10-P2: show w09-resume from Vercel
 
