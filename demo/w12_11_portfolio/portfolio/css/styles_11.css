@@ -184,7 +184,7 @@ Navbar
   justify-content: center;
   align-items: center;
   height: 4rem;
-  background-color: var(--clr-primar-10);
+  background-color: var(--clr-primary-10);
 }
 .nav-center {
   display: flex;
@@ -207,6 +207,20 @@ Navbar
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .nav .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    right: 3rem;
+  }
+  .nav .nav-links li a {
+    color: var(--clr-grey-5);
+  }
+  .nav .nav-btn {
+    display: none;
+  }
+}
 /*
 =============== 
 Sidebar
