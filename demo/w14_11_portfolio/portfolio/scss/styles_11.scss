@@ -357,6 +357,7 @@ Projects
             transform: translate(-50%, -50%);
             color: var(--clr-white);
             opacity: 0;
+            height: 85vh;
             
             p {
                 color: var(--clr-white);
@@ -419,6 +420,74 @@ Projects
 
 /*
 =============== 
-Projects
+Services
 ===============
 */
+
+.services {
+    background-color: var(--clr-grey-10);
+    margin: 0 auto;
+    height: auto;
+
+
+
+    .button {
+        background: var(--clr-white);
+        border-radius: var(--radius);
+        border-color: transparent;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        min-height: 50vh;
+        color: var(--clr-block);
+        padding: 1.5rem 2rem;
+        margin: 2rem;
+        
+        .underline {
+            margin-bottom: 1.5rem;
+            height: 0.15rem;
+        }
+
+        &:hover {
+            background: var(--clr-primary-5);
+            color: var(--clr-white);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            .underline {
+                background: var(--clr-white);
+                transition: var(--transition);
+            }
+        }
+        
+    }
+
+    &-info {
+        font-size: 3rem;
+        text-align: center;
+    }
+     
+    .underline {
+        margin-bottom: 1.5rem;
+    }
+
+    &-title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services {
+        &-title {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services {
+        &-title {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
