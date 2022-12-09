@@ -144,7 +144,6 @@ h4 {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -355,7 +354,8 @@ Hero
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   position: relative;
 }
@@ -413,7 +413,8 @@ about
 .about-photo {
   max-width: 25rem;
   max-height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   position: relative;
 }
@@ -481,7 +482,8 @@ Projects
 }
 .projects .project-img {
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   transition: var(--transition);
 }
@@ -498,4 +500,46 @@ Projects
   color: var(--clr-white);
 }
 
-/*# sourceMappingURL=styles_11.css.map */
+@media screen and (min-width: 768px) {
+  .projects-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .projects-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .projects-center {
+    grid-template-rows: 15rem 15rem;
+    gap: 2rem;
+    grid-template-areas: "a b b" "a c d";
+  }
+  .projects .project {
+    height: 100%;
+  }
+  .projects .project-img {
+    height: 100%;
+  }
+  .projects .project-1 {
+    grid-area: a;
+  }
+  .projects .project-2 {
+    grid-area: b;
+  }
+  .projects .project-3 {
+    grid-area: c;
+  }
+  .projects .project-4 {
+    grid-area: d;
+  }
+}
+/*
+=============== 
+Projects
+===============
+*//*# sourceMappingURL=styles_11.css.map */

@@ -107,8 +107,7 @@ Product
   display: block;
   width: 100%;
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--borderRadius);
-}
-
-/*# sourceMappingURL=p3_11.css.map */
+}/*# sourceMappingURL=p3_11.css.map */

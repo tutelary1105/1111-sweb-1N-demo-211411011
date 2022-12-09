@@ -103,8 +103,7 @@ Product
   display: block;
   width: 25rem;
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--borderRadius);
-}
-
-/*# sourceMappingURL=p2_11.css.map */
+}/*# sourceMappingURL=p2_11.css.map */
