@@ -550,3 +550,16 @@ Connect
         margin-top: 2rem;
     }
 }
+
+.single-page{
+    display: grid;
+    text-align: center;
+
+    .underline {
+        margin-bottom: 3rem;
+    }
+
+    p {
+        text-align: left; 
+    }
+}

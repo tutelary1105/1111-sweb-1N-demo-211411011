@@ -650,4 +650,15 @@ Connect
 .connect .video-text {
   width: 30rem;
   margin-top: 2rem;
+}
+
+.single-page {
+  display: grid;
+  text-align: center;
+}
+.single-page .underline {
+  margin-bottom: 3rem;
+}
+.single-page p {
+  text-align: left;
 }/*# sourceMappingURL=styles_11.css.map */
