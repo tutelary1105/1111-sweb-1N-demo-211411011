@@ -441,6 +441,53 @@ about
 }
 /*
 =============== 
+Services
+===============
+*/
+/* bg-grey in globals */
+.services-center .service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+}
+.services-center .service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.services-center .service:hover .underline {
+  background: var(--clr-white);
+}
+.services-center .service:hover p {
+  color: var(--clr-white);
+}
+.services-center .service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.services-center .service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*
+=============== 
 Projects
 ===============
 */
@@ -537,64 +584,5 @@ Projects
   }
   .projects .project-4 {
     grid-area: d;
-  }
-}
-/*
-=============== 
-Services
-===============
-*/
-.services {
-  background-color: var(--clr-grey-10);
-  margin: 0 auto;
-  height: auto;
-}
-.services .button {
-  background: var(--clr-white);
-  border-radius: var(--radius);
-  border-color: transparent;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  min-height: 50vh;
-  color: var(--clr-block);
-  padding: 1.5rem 2rem;
-  margin: 2rem;
-}
-.services .button .underline {
-  margin-bottom: 1.5rem;
-  height: 0.15rem;
-}
-.services .button:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
-  border-radius: var(--radius);
-  transition: var(--transition);
-}
-.services .button:hover .underline {
-  background: var(--clr-white);
-  transition: var(--transition);
-}
-.services-info {
-  font-size: 3rem;
-  text-align: center;
-}
-.services .underline {
-  margin-bottom: 1.5rem;
-}
-.services-title {
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .services-title {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .services-title {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=styles_11.css.map */

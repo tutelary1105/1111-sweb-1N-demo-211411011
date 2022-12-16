@@ -292,6 +292,57 @@ about
 
 /*
 =============== 
+Services
+===============
+*/
+/* bg-grey in globals */
+.services-center {
+    .service {
+      background: var(--clr-white);
+      padding: 3rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      transition: var(--transition);
+      &:hover {
+        background: var(--clr-primary-5);
+        color: var(--clr-white);
+        .underline {
+          background: var(--clr-white);
+        }
+        p {
+          color: var(--clr-white);
+        }
+      }
+      &-icon {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      .underline {
+        width: 3rem;
+        height: 0.12rem;
+        -webkit-transition: var(--transition);
+        transition: var(--transition);
+      }
+    }
+  }
+  @media screen and (min-width: 676px) {
+    .services-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      -webkit-column-gap: 2rem;
+      -moz-column-gap: 2rem;
+      column-gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .services-center {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+/*
+=============== 
 Projects
 ===============
 */
@@ -413,81 +464,6 @@ Projects
             &-4 {
                 grid-area: d;
             }
-        }
-    }
-}
-
-
-/*
-=============== 
-Services
-===============
-*/
-
-.services {
-    background-color: var(--clr-grey-10);
-    margin: 0 auto;
-    height: auto;
-
-
-
-    .button {
-        background: var(--clr-white);
-        border-radius: var(--radius);
-        border-color: transparent;
-        cursor: pointer;
-        margin-bottom: 1rem;
-        min-height: 50vh;
-        color: var(--clr-block);
-        padding: 1.5rem 2rem;
-        margin: 2rem;
-        
-        .underline {
-            margin-bottom: 1.5rem;
-            height: 0.15rem;
-        }
-
-        &:hover {
-            background: var(--clr-primary-5);
-            color: var(--clr-white);
-            border-radius: var(--radius);
-            transition: var(--transition);
-            .underline {
-                background: var(--clr-white);
-                transition: var(--transition);
-            }
-        }
-        
-    }
-
-    &-info {
-        font-size: 3rem;
-        text-align: center;
-    }
-     
-    .underline {
-        margin-bottom: 1.5rem;
-    }
-
-    &-title {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .services {
-        &-title {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 2rem;
-        }
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .services {
-        &-title {
-            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
