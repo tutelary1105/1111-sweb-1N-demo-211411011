@@ -610,6 +610,10 @@ Connect
 .connect {
   min-height: 40vh;
   position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+  display: grid;
+  place-items: center;
   -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
           clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
@@ -631,4 +635,19 @@ Connect
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -5;
+}
+.connect .video-banner {
+  background-color: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.connect .section-title {
+  margin-bottom: 2rem;
+}
+.connect .video-text {
+  width: 30rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=styles_11.css.map */
