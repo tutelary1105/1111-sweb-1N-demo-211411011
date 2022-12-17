@@ -354,7 +354,7 @@ Projects
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -3%);
             color: var(--clr-white);
             opacity: 0;
             height: 85vh;
@@ -566,6 +566,7 @@ Connect
 Skills
 ===============
 */
+
 @media screen and (min-width: 768px) {
     .skills-center {
         grid-template-columns: 1fr 1fr;
@@ -638,6 +639,81 @@ Skills
         }
         &-70  {
             width: 70%;
+        }
+    }
+}
+
+/*
+=============== 
+Skills
+===============
+*/
+
+.timeline {
+    .section-title {
+        display: grid;
+        text-align: center;
+    }
+    
+    &-center {
+        width: 80vw;
+        max-width: 40rem;
+    }
+
+    &-item {
+        border-top: 2px dashed var(--clr-primary-5);
+        margin: 0;
+        padding: 4rem 2rem;
+        position: relative;
+
+
+        &:nth-child(even) {
+            border-left: 2px dashed var(--clr-primary-5);
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            margin-right: 2rem;
+            padding-right: 0;
+                        
+            .number {
+                left: 0;
+            }
+        }
+
+        &:nth-child(odd) {
+            border-right: 2px dashed var(--clr-primary-5);
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            margin-left: 2rem;
+            padding-left: 0;
+            
+            .number {
+                right: 0;
+                transform: translate(50%, -50%);
+            }
+        }
+
+        &:first-child {
+            border-top: 0;
+            border-top-right-radius: 0;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 0;
+        }
+
+        .number {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 0;
+            background: var(--clr-primary-5);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--clr-primary-1);
+            font-weight: bold;
         }
     }
 }
