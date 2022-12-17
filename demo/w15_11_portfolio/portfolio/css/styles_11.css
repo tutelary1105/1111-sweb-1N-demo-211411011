@@ -656,9 +656,76 @@ Connect
   display: grid;
   text-align: center;
 }
-.single-page .underline {
-  margin-bottom: 3rem;
-}
 .single-page p {
   text-align: left;
+}
+
+/*
+=============== 
+Skills
+===============
+*/
+@media screen and (min-width: 768px) {
+  .skills-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.skills {
+  background: var(--clr-primary-9);
+}
+.skills .section-title {
+  display: grid;
+  text-align: center;
+}
+.skills-center {
+  width: 80vw;
+  display: grid;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.skills h3 {
+  margin: 1.5rem 0;
+  color: var(--clr-primary-1);
+}
+
+.skill {
+  margin-bottom: 1.25rem;
+}
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+}
+.skill-container {
+  background-color: var(--clr-white);
+  height: 1rem;
+  width: 100%;
+  border-radius: var(--radius);
+  position: relative;
+}
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  height: 100%;
+  width: 50%;
+  border-radius: var(--radius);
+}
+.skill-text {
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 1rem);
+}
+.skill-text-80 {
+  left: calc(80% - 1rem);
+}
+.skill-text-70 {
+  left: calc(70% - 1rem);
+}
+.skill .value-80 {
+  width: 80%;
+}
+.skill .value-70 {
+  width: 70%;
 }/*# sourceMappingURL=styles_11.css.map */
