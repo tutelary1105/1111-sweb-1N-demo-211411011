@@ -17,19 +17,127 @@
 
   <body>
     <!-- navbar -->
-    <nav class="nav" id="nav"></nav>
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="nav logo" />
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about_11.html">about</a>
+          </li>
+          <li>
+            <a href="projects_11.html">projects</a>
+          </li>
+          <li>
+            <a href="contact_11.html">contact</a>
+          </li>
+        </ul>
+        <button class="nav-btn" id="nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
     <!-- end of navbar -->
     <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="#section-hero">home</a>
+          </li>
+          <li>
+            <a href="#section-about">about</a>
+          </li>
+          <li>
+            <a href="#section-services">projects</a>
+          </li>
+          <li>
+            <a href="#section-projects">contact</a>
+          </li>
+        </ul>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.yahoo.com">
+              <i class="fa-brands fa-yahoo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/">
+              <i class="fa-brands fa-amazon"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
 
     <!-- end of sidebar -->
     <header class="projects-hero">
       <!-- section title -->
-
+      <div class="section-title">
+        <h1>my projects</h1>
+        <div class="underline"></div>
+      </div>
       <!--end of section title -->
     </header>
-    <section class="section">
-      <div class="section-center projects-page-center">
-        <!-- single project -->
+    <section class="tiles" id="section-tiles">
+      <div class="section-title">
+        <h2>Tiles Layout</h2>
+      </div>
+      <div class="tiles-center">
+        <article class="tile-1">
+          <img src="./images/w05_p1.jpg" alt="">
+        </article>
+        <article class="tile-2">
+          <img src="./images/w05_p2.jpg" alt="">
+        </article>
+        <article class="tile-3">
+          <img src="./images/w05_p3.jpg" alt="">
+        </article>
+        <article class="tile-4">
+          <img src="./images/w05_p4.jpg" alt="">
+        </article>
+        <article class="tile-5">
+          <img src="./images/w05_p5.jpg" alt="">
+        </article>
+        <article class="tile-6">
+          <img src="./images/w05_p6.jpg" alt="">
+        </article>
+        <article class="tile-7">
+          <img src="./images/w05_p7.jpg" alt="">
+        </article>
+        <article class="tile-8">
+          <img src="./images/w05_p8.jpg" alt="">
+        </article>
+        <article class="tile-9">
+          <img src="./images/w05_p9.jpg" alt="">
+        </article>
+      </div>
+    </section>
 
         <!-- end of single project -->
       </div>
@@ -37,8 +145,35 @@
 
     <!-- footer -->
     <footer class="footer">
-      <ul class="social-icons"></ul>
-
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com" class="social-icon">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com" class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.yahoo.com" class="social-icon">
+            <i class="fa-brands fa-yahoo"></i>
+           </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="social-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/" class="social-icon">
+            <i class="fa-brands fa-amazon"></i>
+          </a>
+        </li>
+    
+      </ul>
+    
       <p>&copy; <span id="date"></span> John Doe. All rights reserved.</p>
     </footer>
     <script src="./js/script_11.js"></script>

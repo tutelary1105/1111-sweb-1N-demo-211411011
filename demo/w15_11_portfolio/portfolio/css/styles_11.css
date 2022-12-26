@@ -144,7 +144,6 @@ h4 {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -355,7 +354,8 @@ Hero
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   position: relative;
 }
@@ -413,7 +413,8 @@ about
 .about-photo {
   max-width: 25rem;
   max-height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   position: relative;
 }
@@ -481,7 +482,8 @@ Projects
 }
 .projects .project-img {
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--radius);
   transition: var(--transition);
 }
@@ -503,7 +505,8 @@ Projects
   .projects-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -590,7 +593,8 @@ Services
   .services-title {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -610,7 +614,8 @@ Connect
   margin: 5rem 0;
   display: grid;
   place-items: center;
-  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+          clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
 .connect::after {
   content: "";
@@ -629,14 +634,16 @@ Connect
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -5;
 }
 .connect .video-banner {
   background-color: var(--clr-primary-10);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
-  clip-path: polygon(0% 0, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 .connect .section-title {
   margin-bottom: 2rem;
@@ -674,7 +681,8 @@ Skills
 .skills-center {
   width: 80vw;
   display: grid;
-  column-gap: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 .skills h3 {
   margin: 1.5rem 0;
@@ -783,6 +791,4 @@ timeline
   place-items: center;
   color: var(--clr-primary-1);
   font-weight: bold;
-}
-
-/*# sourceMappingURL=styles_11.css.map */
+}/*# sourceMappingURL=styles_11.css.map */
