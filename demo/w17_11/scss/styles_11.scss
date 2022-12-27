@@ -189,48 +189,48 @@ Navbar
 */
 
 .nav {
-    background-color: var(--clr-primary-10);
-    height: 7rem;
+    text-transform:capitalize;
+    background-color: white;
+    height: 15rem;
     padding: 1rem;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--clr-grey-3);
-}
 
-.nav-center {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    width: auto;
-
-    text-align: center;
-      a {
-        color: var(--clr-block);
-          &:hover {
-            color: red;
-            border-bottom: 2px solid black;
-          }
-      }
-}
-
-.line {
-  &:hover {
-  width: 5rem;
-  height: 0.25rem;
-  margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
+    &-center {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
   }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      width: auto;
+
+      text-align: center;
+        a {
+          color: var(--clr-block);
+            &:hover {
+              color: red;
+              border-bottom: 2px solid black;
+            }
+        }
+    }
+
+    .line {
+      &:hover {
+      width: 5rem;
+      height: 0.25rem;
+      margin-bottom: 1.25rem;
+      background: var(--clr-primary-5);
+      margin-left: auto;
+      margin-right: auto;
+      }
+    }
 }
 
 .show-classdemo{
@@ -238,8 +238,7 @@ Navbar
   height: calc(100vh - 5rem);
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav-links {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -258,6 +257,52 @@ Works
 ===============
 */
 
+.works-info {
+  width: 80vw;
+  display: grid;
+  margin: 5rem auto;
+  gap: 1rem;
+  text-align: center;
+  
+  .works {
+    width: 80vw;
+    display: grid;
+    margin: 5rem auto;
+    gap: 1rem;
+    
+    .work {
+      border: 1px solid #a9b6bd;
+      border-radius: var(--borderRadius);
+      box-shadow: var(--shadow-3);
+    }
+  
+    &-img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      border-radius: var(--borderRadius);
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .works {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works {
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .works {
+  grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 
 
 
@@ -267,9 +312,121 @@ Resume
 ===============
 */
 
+.resume-info {
+  width: 80vw;
+  display: grid;
+  margin: 5rem auto;
+  gap: 1rem;
+  text-align: center;
+}
+
+.resume {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  gap: 3rem;
+  background-color: gray;
+  
+  .single-resume {
+    border: 1px solid #a9b6bd;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-3);
+  }
+
+  .single-resume-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+  }
+}
+
 
 /*
 =============== 
 Learning
 ===============
 */
+
+.navbar {
+  background-color: var(--clr-primary-10);
+  height: 4rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  
+  &-center {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: auto;
+  
+    text-align: center;
+      a {
+        color: blue;
+          &:hover {
+            color: black;
+            border-bottom: 2px solid black;
+          }
+      }
+  }
+}
+
+.learn-info {
+  width: 80vw;
+  display: grid;
+  margin: 5rem auto;
+  gap: 1rem;
+  text-align: center;
+}
+
+.learn {
+
+  .section-learn{
+    padding: 5rem;
+    height: 1rem;
+    text-align: center;
+  }
+
+  .resume-learn {
+
+    .about {
+      background-color: var(--clr-grey-9);
+      padding: 0.75rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 1s ease-in-out all;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      width: var(--fluid-width);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    h3 {
+      color: var(--clr-grey-5);
+    }  
+  }
+}
+
+.show-learn {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+}
+
+
+
