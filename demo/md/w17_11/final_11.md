@@ -38,7 +38,13 @@
 
 ### W17-P5: 本學期w11-w17 git log紀錄
 
-![](w17_p5.png)
+![](w17_p5-1.png)
+
+![](w17_p5-2.png)
+
+![](w17_p5-3.png)
+
+![](w17_p5-4.png)
 
 ### W17-logs: show all logs
 
